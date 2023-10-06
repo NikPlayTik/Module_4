@@ -8,7 +8,7 @@ namespace Module_4
 {
     public interface IBook
     {
-        string flagAvailable();
+        string Available();
         void Extradition();
     }
 
@@ -35,7 +35,7 @@ namespace Module_4
         }
 
         // проверка доступности книги
-        public string flagAvailable()
+        public string Available()
         {
             if (flagExtradition)
             {
@@ -70,13 +70,13 @@ namespace Module_4
             Book book2 = new Book("Мальчик-рыба", "Чахон Фетт");
 
             // проверка доступности и выдача книг
-            Console.WriteLine($"Книга \"{book1.Title}\" доступна: {book1.flagAvailable()}");
+            Console.WriteLine($"Книга \"{book1.Title}\" доступна: {book1.Available()}");
             book1.Extradition();
-            Console.WriteLine($"Книга \"{book1.Title}\" доступна: {book1.flagAvailable()}");
+            Console.WriteLine($"Книга \"{book1.Title}\" доступна: {book1.Available()}");
 
-            Console.WriteLine($"Книга \"{book2.Title}\" доступна: {book2.flagAvailable()}");
+            Console.WriteLine($"Книга \"{book2.Title}\" доступна: {book2.Available()}");
             book2.Extradition();
-            Console.WriteLine($"Книга \"{book2.Title}\" доступна: {book2.flagAvailable()}");
+            Console.WriteLine($"Книга \"{book2.Title}\" доступна: {book2.Available()}");
             Console.ReadLine();
         }
     }
