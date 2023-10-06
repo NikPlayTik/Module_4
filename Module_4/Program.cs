@@ -12,6 +12,7 @@ namespace Module_4
         {
             // обьекты класса
             Figure figure = new Figure();
+            Products products = new Products();
 
             while (true)
             {
@@ -34,7 +35,7 @@ namespace Module_4
                         break;
                     case "2":
                         Console.Clear();
-                        
+                        products.ProductRealization(); 
                         Console.Clear();
                         break;
                     case "3":
