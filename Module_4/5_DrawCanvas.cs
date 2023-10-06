@@ -35,7 +35,6 @@ namespace Module_4
     {
         public void Draw()
         {
-            // Создание объекта холста
             Canvas canvas = new Canvas();
 
             // рисование на холсте
