@@ -11,7 +11,8 @@ namespace Module_4
         static void Main(string[] args)
         {
             // обьекты класса
-            
+            Figure figure = new Figure();
+
             while (true)
             {
                 // меню выбора
@@ -28,7 +29,7 @@ namespace Module_4
                 {
                     case "1":
                         Console.Clear();
-                        
+                        figure.FigureRealization();
                         Console.Clear();
                         break;
                     case "2":
