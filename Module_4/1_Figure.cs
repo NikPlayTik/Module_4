@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace Module_4
 {
-    internal class _1_Figure
-    {
-    }
+
 }

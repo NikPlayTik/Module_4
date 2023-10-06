@@ -10,6 +10,55 @@ namespace Module_4
     {
         static void Main(string[] args)
         {
+            // обьекты класса
+            
+            while (true)
+            {
+                // меню выбора
+                Console.WriteLine("\t---Меню---" +
+                    "\n1. Создание интерфейса «Фигура» с методами для вычисления площади и периметра" +
+                    "\n2. Приложение для учета продуктов в магазине с использованием интерфейсов" +
+                    "\n3. Система учета студентов в университете с помощью интерфейсов" +
+                    "\n4. Приложение для работы с библиотекой книг с использованием интерфейсов" +
+                    "\n5. Приложение для рисования на холсте с использованием интерфейсов");
+
+                string choiceNumber = Console.ReadLine();
+
+                switch (choiceNumber)
+                {
+                    case "1":
+                        Console.Clear();
+                        
+                        Console.Clear();
+                        break;
+                    case "2":
+                        Console.Clear();
+                        
+                        Console.Clear();
+                        break;
+                    case "3":
+                        Console.Clear();
+                        
+                        Console.Clear();
+                        break;
+                    case "4":
+                        Console.Clear();
+                        
+                        Console.Clear();
+                        break;
+                    case "5":
+                        Console.Clear();
+                        
+                        Console.Clear();
+                        break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Некорректный выбор. Попробуйте еще раз.");
+                        Console.ReadLine();
+                        Console.Clear();
+                        break;
+                }
+            }
         }
     }
 }
