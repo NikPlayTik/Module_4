@@ -41,6 +41,7 @@ namespace Module_4
             canvas.DrawLine(0, 0, 100, 100);
             canvas.DrawCircle(50, 50, 30);
             canvas.DrawRectangle(10, 10, 80, 60);
+            Console.ReadLine();
         }
     }
 }
