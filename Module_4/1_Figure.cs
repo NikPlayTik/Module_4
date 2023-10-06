@@ -111,8 +111,8 @@ namespace Module_4
                         {
                             if (radiusC > 0)
                             {
-                                Console.WriteLine($"Площадь круга: {circle.CalculateArea()}");
-                                Console.WriteLine($"Периметр круга: {circle.CalculatePerimetr()}");
+                                Console.WriteLine($"Площадь круга: {circle.CalculateArea():F2}");
+                                Console.WriteLine($"Периметр круга: {circle.CalculatePerimetr():F2}");
                             }
                             else
                             {
@@ -136,8 +136,8 @@ namespace Module_4
                             {
                                 if (lengthR > 0 && widthR > 0)
                                 {
-                                    Console.WriteLine($"Площадь прямоугольника: {rectangle.CalculateArea()}");
-                                    Console.WriteLine($"Периметр прямоугольника: {rectangle.CalculatePerimetr()}");
+                                    Console.WriteLine($"Площадь прямоугольника: {rectangle.CalculateArea():F2}");
+                                    Console.WriteLine($"Периметр прямоугольника: {rectangle.CalculatePerimetr():F2}");
                                 }
                                 else
                                 {
@@ -165,8 +165,8 @@ namespace Module_4
                                 {
                                     if (side_1T > 0 && side_2T > 0 && side_3T > 0)
                                     {
-                                        Console.WriteLine($"Площадь треугольника: {triangle.CalculateArea()}");
-                                        Console.WriteLine($"Периметр треугольника: {triangle.CalculatePerimetr()}");
+                                        Console.WriteLine($"Площадь треугольника: {triangle.CalculateArea():F2}");
+                                        Console.WriteLine($"Периметр треугольника: {triangle.CalculatePerimetr():F2}");
                                     }
                                 }
                             }
