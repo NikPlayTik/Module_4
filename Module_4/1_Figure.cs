@@ -105,10 +105,10 @@ namespace Module_4
                 switch (numberChoice)
                 {
                     case "1":                        
-                        Circle circle = new Circle(radiusC);
                         Console.Write("Введите радиус круга: ");
                         if (double.TryParse(Console.ReadLine(), out radiusC))
                         {
+                            Circle circle = new Circle(radiusC);
                             if (radiusC > 0)
                             {
                                 Console.WriteLine($"Площадь круга: {circle.CalculateArea():F2}");
@@ -127,13 +127,13 @@ namespace Module_4
                         break;
 
                     case "2":
-                        Rectangle rectangle = new Rectangle(lengthR, widthR);
                         Console.Write("Введите длину прямоугольника: ");
                         if (double.TryParse(Console.ReadLine(), out lengthR))
                         {
                             Console.Write("Введите ширину прямоугольника: ");
                             if (double.TryParse(Console.ReadLine(), out widthR))
                             {
+                                Rectangle rectangle = new Rectangle(lengthR, widthR);
                                 if (lengthR > 0 && widthR > 0)
                                 {
                                     Console.WriteLine($"Площадь прямоугольника: {rectangle.CalculateArea():F2}");
@@ -153,7 +153,6 @@ namespace Module_4
                         break;
 
                     case "3":
-                        Triangle triangle = new Triangle(side_1T, side_2T, side_3T);
                         Console.Write("Введите длину первой стороны треугольника: ");
                         if (double.TryParse(Console.ReadLine(), out side_1T))
                         {
@@ -163,6 +162,7 @@ namespace Module_4
                                 Console.Write("Введите длину третьей стороны треугольника: ");
                                 if (double.TryParse(Console.ReadLine(), out side_3T))
                                 {
+                                    Triangle triangle = new Triangle(side_1T, side_2T, side_3T);
                                     if (side_1T > 0 && side_2T > 0 && side_3T > 0)
                                     {
                                         Console.WriteLine($"Площадь треугольника: {triangle.CalculateArea():F2}");
