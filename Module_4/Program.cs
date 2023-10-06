@@ -15,7 +15,7 @@ namespace Module_4
             Products products = new Products();
             StudentAccouting studentAccouting = new StudentAccouting();
             Library library = new Library();
-
+            DrawCanvas draw_canvas = new DrawCanvas();
             while (true)
             {
                 // меню выбора
@@ -52,7 +52,7 @@ namespace Module_4
                         break;
                     case "5":
                         Console.Clear();
-                        
+                        draw_canvas.Draw();
                         Console.Clear();
                         break;
                     default:
