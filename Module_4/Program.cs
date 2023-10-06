@@ -13,6 +13,8 @@ namespace Module_4
             // обьекты класса
             Figure figure = new Figure();
             Products products = new Products();
+            StudentAccouting studentAccouting = new StudentAccouting();
+            Library library = new Library();
 
             while (true)
             {
@@ -40,12 +42,12 @@ namespace Module_4
                         break;
                     case "3":
                         Console.Clear();
-                        
+                        studentAccouting.Student();
                         Console.Clear();
                         break;
                     case "4":
                         Console.Clear();
-                        
+                        library.LibraryBook();
                         Console.Clear();
                         break;
                     case "5":
